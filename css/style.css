@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+* {
+
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+body{
+  font-size: 1rem; 
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 205px;
+  margin-top: 50px;
+  padding: 35px 30px;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+
+.instagram-media {
+  position: relative;
+  top: 50px;
+  max-height: 140px;
+  max-width: 350px;
+  overflow: hidden;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Smooth transitions */
+  opacity: 0.3;
+}
+
+.instagram-media:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 1);
+  /* Full opacity on hover */
+}
+
+.instagram-media .embed-container {
+  padding-bottom: 0 !important;
+}
+
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col h1 {
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
+}
+
+.col h1 span {
+  color: #b7b2a9;
+}
+
+.col {
+  flex-basis: 75%;
+}
+
+#ww_ed9f6ec5b251b {
+  top:225px;
+  left:60px;
+  opacity: 0.5; /* 设置透明度，值越小越透明 */
+  border-radius: 15px; /* 设置圆角半径 */
+  overflow: hidden; /* 确保内容不会溢出圆角边框 */
+  transition: opacity 0.3s ease, border-radius 0.3s ease, transform 0.3s ease; /* 添加过渡效果，包括放大效果 */
+}
+
+
+ /* 当鼠标悬停时提高透明度并增加圆角 */
+#ww_ed9f6ec5b251b:hover {
+  opacity: 1;
+  border-radius: 20px;
+  transform: scale(1.05); 
+}
+
+h1 {
+  color: #fff;
+  font-size: 88px;
+  font-family: "Maven pro";
+}
+
+p {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-top: 40px;
+  padding: 15px 60px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+
+  transform: scale(1.05);
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset,
+    -10px -10px 10px white inset;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+.card p {
+  text-shadow: 0 0 5px #000;
+  font-size: 8px;
+}
+
+
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fefefe;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+
+}
+
+nav ul li a:hover {
+  color: #b4abab97;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+  z-index: 1;
+  text-decoration: underline;
+
+}
+
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col h1 {
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
+}
+
+.col h1 span {
+  color: #b7b2a9;
+}
+
+.col {
+  flex-basis: 75%;
+}
+
+#ww_ed9f6ec5b251b {
+  top: 225px;
+  left: 60px;
+  opacity: 0.5;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+}
+
+#ww_ed9f6ec5b251b:hover {
+  opacity: 1;
+  border-radius: 20px;
+  transform: scale(1.05);
+}
+
+h1 {
+  color: #fff;
+  font-size: 88px;
+  font-family: "Maven pro";
+}
+
+p {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-top: 40px;
+  padding: 15px 60px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset, -10px -10px 10px white inset;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+.card p {
+  text-shadow: 0 0 5px #000;
+  font-size: 8px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fefefe;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #b4abab97;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+  z-index: 1;
+  text-decoration: underline;
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col {
+    flex-basis: 60%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #ww_ed9f6ec5b251b {
+    top: 40px;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .instagram-media {
+    max-height: 0px;
+  }
+
+}

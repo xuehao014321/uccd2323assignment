@@ -1,0 +1,866 @@
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	list-style: none;
+}
+
+.box {
+	width: 100%;
+	height: 2500px;
+	background-color: #2c2c2c;
+}
+
+.one_beijing {
+	width: 100%;
+	height: 210px;
+
+}
+
+.logo {
+	width: 1150px;
+	height: 120px;
+	margin: 0px auto;
+}
+
+.logo_left {
+	width: 760px;
+	height: 60px;
+	margin-top: 30px;
+	float: left;
+}
+
+.logo_left a {
+	text-decoration: none;
+}
+
+.logo_left a p {
+	color: #FFF;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	float: left;
+	text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+.logo_left a span {
+	color: #CCC;
+	font-size: 14px;
+	line-height: 70px;
+}
+
+.logo_right {
+	width: 390px;
+	height: 60px;
+	margin-top: -60px;
+	float: right;
+	box-shadow: 3px 3px 3px #FFF;
+	text-align: center;
+	border: 1px solid #CCC;
+}
+
+.logo_right a {
+	color: #CCC;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+.logo_right a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.top-nav {
+	width: 1300px;
+	height: 65px;
+	margin: 0px auto;
+}
+
+.nav_none {
+	width: 210px;
+	height: 65px;
+	background-color: #272727;
+	float: left;
+	position: relative;
+	line-height: 65px;
+	text-align: center;
+	font-size: 20px;
+	z-index: 1000;
+}
+
+.nav_none>a {
+	color: #CCC;
+	text-decoration: none;
+	display: block;
+	width: 210px;
+	height: 65px;
+}
+
+.nav_none>a:hover {
+	background-color: #666;
+	color: #FFF;
+}
+
+#nav_none {
+	border-left: 0.8px solid #333;
+}
+
+#nav_one,
+#nav_two,
+#nav_three,
+#nav_four,
+#nav_five,
+#nav_six {
+	width: 210px;
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 65px;
+	background-color: #222222;
+	border-radius: 0px 0px 8px 8px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#nav_one a,
+#nav_two a,
+#nav_three a,
+#nav_four a,
+#nav_five a,
+#nav_six a {
+	display: block;
+	color: #CCC;
+	text-decoration: none;
+}
+
+#nav_one>a:hover,
+#nav_two>a:hover,
+#nav_three>a:hover,
+#nav_four>a:hover,
+#nav_five>a:hover,
+#nav_six>a:hover {
+	color: #FFF;
+	background-color: #666;
+}
+
+.two_beijing {
+	width: 100%;
+	height: 530px;
+	background: url(../images/two_beijing.png) repeat-x;
+	float: left;
+}
+
+.top_lunbo {
+	width: 1150px;
+	height: 558px;
+	margin-top: -25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+.wrap {
+	width: 1150px;
+	height: 430px;
+	position: relative;
+}
+
+.list {
+	position: relative;
+}
+
+.item {
+	position: absolute;
+	opacity: 0;
+	transition: all 2s;
+	margin: 0px auto;
+	margin-left: 20px;
+}
+
+.btn {
+	width: 200px;
+	height: 430px;
+	position: absolute;
+	top: 0px;
+	z-index: 100;
+	color: #FFF;
+	font-size: 36px;
+	background-color: #CCC;
+	opacity: 0;
+}
+
+.btn:hover {
+	opacity: 0.5;
+}
+
+#goPre {
+	left: 20px;
+}
+
+#goNext {
+	right: 20px;
+}
+
+.item.active {
+	opacity: 1;
+	z-index: 10;
+}
+
+.pointList {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1000;
+}
+
+.point {
+	width: 10px;
+	height: 10px;
+	background-color: #999;
+	border-radius: 100%;
+	float: left;
+	margin-right: 20px;
+	border: 2px solid #FFF;
+	cursor: pointer;
+}
+
+.point.active {
+	background-color: #FFF;
+}
+
+.img_beijing_top {
+	width: 1110px;
+	height: 18px;
+	background: url(../images/top_beijing.png) repeat-x;
+	margin: 20px;
+}
+
+.img_beijing_top_kongbai {
+	width: 1150px;
+	height: 1px;
+	background-color: #FFF;
+}
+
+.img_beijing_bottom {
+	width: 1110px;
+	height: 36px;
+	background: url(../images/bottom_beijing.png) repeat-x;
+	margin: 20px;
+}
+
+.three_beijing {
+	width: 100%;
+	height: 660px;
+	clear: both;
+	background-color: #fbfbfb;
+}
+
+.three_box {
+	width: 1150px;
+	height: 660px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-bottom: 0;
+	margin: 0px auto;
+}
+
+.three_box_one,
+.three_box_two,
+.three_box_three {
+	width: 29.8%;
+	height: 602px;
+	float: left;
+}
+
+.three_box_one {
+	margin: 30px;
+}
+
+.three_box_one>span {
+	float: left;
+	font-size: 18px;
+}
+
+.three_box_one_beijing {
+	background: url(../images/top_beijing.png) repeat-x;
+	width: 263px;
+	height: 10px;
+	margin: 8px 0px 0px 80px;
+}
+
+.three_box_one_one {
+	width: 100%;
+	height: 500px;
+}
+
+.one_img_border {
+	border: 1px solid #CCC;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.img1 {
+	margin: 10px;
+	overflow: hidden;
+}
+
+.img1 img:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s linear 0s;
+}
+
+.img1_text {
+	color: #666;
+}
+
+.img1_text a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img1_text a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.img2 {
+	width: 100%;
+	height: 111px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	margin-top: 15px;
+	position: relative;
+}
+
+.img2 img:hover {
+	position: absolute;
+	top: -60px;
+	left: 400px;
+	transform: scale(10);
+	z-index: 10;
+}
+
+.img2_border {
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #CCC;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.img2_border img {
+	margin: 5px;
+}
+
+.img2_text {
+	width: 343px;
+	height: 111px;
+}
+
+.img2_text p {
+	margin-top: 23px;
+	color: #666;
+}
+
+.img2_text p a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666;
+}
+
+.img2_text p a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.img3 {
+	width: 100%;
+	height: 111px;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+}
+
+.img3 img:hover {
+	position: absolute;
+	top: -172px;
+	left: 400px;
+	transform: scale(10);
+	z-index: 10;
+}
+
+.img3_border {
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #CCC;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.img3_border img {
+	margin: 5px;
+}
+
+.img3_text {
+	width: 343px;
+	height: 111px;
+}
+
+.img3_text p {
+	color: #666;
+}
+
+.img3_text p a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img3_text p a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.three_box_two {
+	margin: 30px 30px 30px 0px;
+}
+
+.three_box_two>span {
+	float: left;
+	font-size: 18px;
+}
+
+.three_box_two_beijing {
+	background: url(../images/top_beijing.png) repeat-x;
+	width: 243px;
+	height: 10px;
+	margin: 8px 0px 0px 100px;
+}
+
+.three_box_two_one {
+	width: 100%;
+	height: 500px;
+}
+
+.two_img_border {
+	border: 1px solid #CCC;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.img4 {
+	margin: 10px;
+	overflow: hidden;
+}
+
+.img4 img:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s linear 0s;
+}
+
+.img4_text {
+	width: 100%;
+	height: 83px;
+	color: #666;
+}
+
+.img4_text p {
+	width: 100%;
+	height: 83px;
+	overflow: auto;
+}
+
+.img4_text a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img4_text a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.img5 {
+	width: 100%;
+	height: 111px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	margin-top: 15px;
+	position: relative;
+}
+
+.img5 img:hover {
+	position: absolute;
+	top: -60px;
+	left: 400px;
+	transform: scale(10);
+	z-index: 10;
+}
+
+.img5_border {
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #CCC;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.img5_border img {
+	margin: 5px;
+}
+
+.img5_text {
+	width: 343px;
+	height: 111px;
+}
+
+.img5_text p {
+	margin-top: 23px;
+	color: #666;
+}
+
+.img5_text p a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666;
+}
+
+.img5_text p a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.img6 {
+	width: 100%;
+	height: 111px;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+}
+
+.img6 img:hover {
+	position: absolute;
+	top: -172px;
+	left: 400px;
+	transform: scale(10);
+	z-index: 10;
+}
+
+.img6_border {
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #CCC;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.img6_border img {
+	margin: 5px;
+}
+
+.img6_text {
+	width: 343px;
+	height: 111px;
+}
+
+.img6_text p {
+	color: #666;
+}
+
+.img6_text p a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666;
+}
+
+.img6_text p a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.three_box_three {
+	margin: 30px 30px 30px 0px;
+}
+
+.three_box_three>span {
+	float: left;
+	font-size: 18px;
+}
+
+.three_box_three_beijing {
+	background: url(../images/top_beijing.png) repeat-x;
+	width: 243px;
+	height: 10px;
+	margin: 8px 0px 0px 100px;
+}
+
+.three_box_three_one {
+	width: 100%;
+	height: 500px;
+}
+
+.three_img_border {
+	border: 1px solid #CCC;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.img7 {
+	margin: 10px;
+	overflow: hidden;
+}
+
+.img7 img:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s linear 0s;
+}
+
+.img7_text {
+	width: 100%;
+	height: 83px;
+	color: #666;
+}
+
+.img7_text p {
+	width: 100%;
+	height: 83px;
+	overflow: auto;
+}
+
+.img7_text a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img7_text a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.img8 {
+	width: 100%;
+	height: 111px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	margin-top: 15px;
+	position: relative;
+}
+
+.img8 img:hover {
+	position: absolute;
+	top: -60px;
+	left: -400px;
+	transform: scale(10);
+	z-index: 10;
+}
+
+.img8_border {
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #CCC;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.img8_border img {
+	margin: 5px;
+}
+
+.img8_text {
+	width: 343px;
+	height: 111px;
+}
+
+.img8_text p {
+	margin-top: 23px;
+	color: #666;
+}
+
+.img8_text p a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666;
+}
+
+.img8_text p a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.img9 {
+	width: 100%;
+	height: 111px;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+}
+
+.img9 img:hover {
+	position: absolute;
+	top: -172px;
+	left: -400px;
+	transform: scale(10);
+	z-index: 10;
+}
+
+.img9_border {
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #CCC;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.img9_border img {
+	margin: 5px;
+}
+
+.img9_text {
+	width: 343px;
+	height: 111px;
+}
+
+.img9_text p {
+	color: #666;
+}
+
+.img9_text p a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img9_text p a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.three_three_box {
+	width: 1150px;
+	height: 200px;
+	background-color: #FF0;
+	clear: none;
+}
+
+.four_beijing {
+	width: 100%;
+	height: 900px;
+	background-color: #fbfbfb;
+}
+
+.four_three_beijing {
+	width: 1150px;
+	height: 900px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-top: 0;
+	border-bottom: 0;
+	margin: 0px auto;
+}
+
+.four_img_title {
+	width: 1090px;
+	height: 60px;
+	background: url(../images/bottom_beijing.png) repeat-x;
+	margin: 0px auto;
+}
+
+.four_img_title_p1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #666;
+	background-color: #FFF;
+	width: 800px;
+	height: 60px;
+	margin: 0px auto;
+}
+
+.four_three_beijing li {
+	float: left;
+	border-radius: 50%;
+	margin-left: 60px;
+}
+
+.four_three_beijing li img:hover {
+	transform: translate(0px, -50px);
+}
+
+.four_three_beijing li:nth-child(1),
+.four_three_beijing li:nth-child(2),
+.four_three_beijing li:nth-child(3) {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.four_three_beijing li:nth-child(4),
+.four_three_beijing li:nth-child(5),
+.four_three_beijing li:nth-child(6) {
+	margin-top: -40px;
+}
+
+.four_three_beijing img {
+	border-radius: 50%;
+	border: 2px solid #333;
+}
+
+.four_ul p {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #666;
+}
+
+.five_box {
+	width: 1150px;
+	height: 90px;
+	margin: 0px auto;
+	clear: left;
+	border: 1px solid #CCC;
+	border-top: 0;
+	position: relative;
+	background-color: #FFF;
+}
+
+.five_box_beijing {
+	width: 1090px;
+	height: 60px;
+	margin: 0px auto;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	background: url(../images/bottom_beijing.png) repeat-x;
+}
+
+.five_box_beijing a {
+	display: block;
+	text-decoration: none;
+	line-height: 45px;
+	text-align: right;
+	color: #666;
+}
+
+.five_box_beijing a:hover {
+	text-decoration: underline;
+	color: #FC3;
+}
+
+.end {
+	width: 1150px;
+	height: 90px;
+	margin: 20px auto;
+	margin-bottom: 0;
+}
+
+.end p {
+	color: #CCC;
+	font-size: 20px;
+	text-align: center;
+}
+
