@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>login/sign up</title>
+<link href="../css/login.css" rel="stylesheet" />
+</head>
+<body>
+<div class="dowebok" id="dowebok">
+    <div class="form-container sign-up-container">
+        <form id="signUpForm">
+            <h1>sign up</h1>
+            <div class="social-container">
+                <a href="https://x.com/"><img src="../images/30.png" width="40" height="40" /></a>
+                <a href="https://www.facebook.com/"><img src="../images/31.png" width="40" height="40" /></a>
+            </div>
+            <span>or sign up with your email address</span>
+            <input type="text" id="signupName" placeholder="name" required>
+            <input type="email" id="signupEmail" placeholder="e-mail address" placeholder="e-mail address" required>
+            <input type="password" id="signupPassword" placeholder="password" placeholder="password" required>
+            <button type="button" onclick="signUp()">sign up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form id="signInForm">
+            <h1>login</h1>
+            <div class="social-container">
+                <a href="https://x.com/"><img src="../images/30.png" width="40" height="40" /></a>
+                <a href="https://www.facebook.com/"><img src="../images/31.png" width="40" height="40" /></a>
+            </div>
+            <span>or using your account</span>
+            <input type="email" id="loginEmail" placeholder="e-mail address" >
+            <input type="password" id="loginPassword" placeholder="password" required>
+            <button type="button" onclick="signIn()">login</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>already have an account?</h1>
+                <p>Please use your account to log in</p>
+                <button class="ghost" id="signIn">login</button>
+                <br/><br/><br/>
+                <a href="../index.html">back to home page</a>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>don't have an account?</h1>
+                <p>Sign up now to join us and start the journey with us!</p>
+                <button class="ghost" id="signUp">sign up</button>
+                <br/><br/><br/>
+                <a href="../index.html">back to home page</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <button onclick="deleteUser('example@example.com')">Delete User</button>
+<button onclick="deleteAllUsers()">Delete All Users</button>
+<button onclick="clearSession()">Clear Session</button>
+<button onclick="eraseCookie('userEmail')">Clear Cookie</button> -->
+<script src="../js/login.js" type="text/javascript"></script>
+</body>
+</html>
